@@ -10,7 +10,7 @@ const createGoal = async (goalData, token) => {
     },
   }
 
-  const response = await axios.post(API_URL, { text: goalData }, config);
+  const response = await axios.post(API_URL, { text: goalData.text }, config);
 
   return response.data;
 } 
